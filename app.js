@@ -5,6 +5,8 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3333;
 
+
+require('./database/connection');
 //Middlewares
 
 app.use(express.urlencoded({ extended:true }));

@@ -1,5 +1,6 @@
+const controller = require('../controllers/index');
+
 module.exports = (router)=>{
-    router.get('/', (req, res)=>{
-        res.send('Hello');
-    });
+    router.post('/album', controller.addAlbum);
+    router.get('/album', controller.getAll);
 }
